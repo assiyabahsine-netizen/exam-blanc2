@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Demande d'inscription - AMO</title>
+    <link rel="stylesheet" href="stylee.css">
+</head>
+<body>
+    <h1>Demande d'inscription</h1>
+    <form action="inscription.php" method="post">
+        <div >
+            <h2>1- Informations sur le demandeur</h2>
+            <label for="idcs">Identifiant Digital Civil et Social :</label> <br>
+            <input type="text" id="idcs" name="idcs"><br><br>
+
+            <label>Date de naissance :</label><br>
+            <label for="jour">Jour :</label> <br>
+            <input type="text" id="jour" name="jour"> <br>
+            <label for="mois">Mois :</label> <br>
+            <input type="text" id="mois" name="mois"> <br>
+            <label for="annee" >Année :</label> <br>
+            <input type="text" id="annee" name="annee"><br><br>
+
+            <label for="password">Mot de passe du compte :</label> <br>
+            <input type="password" id="password" name="password"><br><br>
+        </div>
+
+        <div >
+            <h2>2- Liste des enfants pris en charge</h2>
+            <table border="1" cellpadding="5">
+                <tr><th colspan="3">Enfants à charge</th></tr>
+                <tr><th>Nom</th><th>Prénom</th><th>Date de naissance</th></tr>
+                <tr>
+                    <td><input type="text" name="nom1"></td>
+                    <td><input type="text" name="prenom1"></td>
+                    <td><input type="text" name="daten1"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="nom2"></td>
+                    <td><input type="text" name="prenom2"></td>
+                    <td><input type="text" name="daten2"></td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <label for="code">Saisissez le code :</label>
+        <input type="text" id="code" name="code"><br><br>
+
+        <label for="observations">Observations :</label><br>
+        <textarea id="observations" name="observations" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Envoyer">
+    </form>
+</body>
+</html>
